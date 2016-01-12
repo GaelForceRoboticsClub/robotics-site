@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link rel='stylesheet' href='../lib/cupertino/jquery-ui.min.css' />
+<link href='../fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../lib/moment.min.js'></script>
+<script src='../lib/jquery.min.js'></script>
+<script src='../fullcalendar.min.js'></script>
+<script type='text/javascript' src='../gcal.js'></script>    
+
+    <script type='text/javascript'>
+
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyBxbK-vj5H85AnA1PUe-v87RoSwltWsw8M',
+        eventSources: [
+            {
+                googleCalendarId: '0t72do02u19ab4qp80garuhgj4@group.calendar.google.com'
+            
+            },
+            {
+                googleCalendarId: 'h8rfru07t6h395591sdlujb3v4@group.calendar.google.com',
+               
+            },
+            {
+                googleCalendarId: '5s89dmbo2frllsj96d2gqakjts@group.calendar.google.com',
+               
+            },
+            {
+                googleCalendarId: '9p5tkbsl2687gd265uo7s70jdo@group.calendar.google.com',
+               
+            },
+            {
+                googleCalendarId: 'team5327d@gmail.com',
+            
+            },
+        ]
+    });
+});
+
+</script>    
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+    #responsive-wrapper {
+        width:100%;
+        margin 0 auto;
+    }
+</style>
+</head>
+<body>
+<div id-'responsive-wrapper'>
+	<div id='calendar'></div>
+    </div>
+
+</body>
+</html>
