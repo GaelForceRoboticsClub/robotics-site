@@ -315,7 +315,7 @@ Our team looks into every aspect of the engineering field. We cooperate and work
     <div class="outer_container">
       <div class="container">
         <div class="row">
-          <div class="col col-md-5 col-md-push-7 col-sm-12"><h1>Meetings</h1></div>
+          <div class="col col-md-5 col-md-push-7 col-sm-12"><h1><a href="{{ url_for('blog') }}" style="color:white">Meetings</a></h1></div>
           <div class="col col-md-7 col-md-pull-5 col-sm-12">
             <div class="blog_posts_container">
 
@@ -329,7 +329,7 @@ Our team looks into every aspect of the engineering field. We cooperate and work
                   <p style="margin-top: 20px">Please <span style="font-weight:bold">complete</span> your contracts at dhsrobotics.com. The <span style="font-weight:bold">Club Fair</span> will be occuring on the 16th and 17th of September and we will probably have a table. The <span style="font-weight:bold">Parent Meeting</span> will be held on September 25th after the Club Fair, please ask your parents to join us. Finally, The GFR Club is planning to host a tournament in house, and we are currently in the planning stages. </p>
                 </div>
               </div>
-              
+
               <div class="blog_post">
                 <div class="front">
                   <h2>07<br>October</h2>
@@ -543,6 +543,14 @@ Our team looks into every aspect of the engineering field. We cooperate and work
         $(this).removeClass('on');
       }
     });
+    window.onload = function() {
+      var elevator = new Elevator({
+        element: document.querySelector('.elevator-button'),
+        mainAudio: 'images/image/elevator.mp3',
+        endAudio: 'images/image/ding.mp3',
+        duration: 15000
+      });
+    }
     var items = ['saturate(2)', 'invert(0.2)', 'brightness(2)', 'blur(5px)'];
     $('#ian').click(function(){
       var item = items[Math.floor(Math.random()*items.length)];

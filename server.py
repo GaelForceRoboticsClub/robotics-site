@@ -4,7 +4,7 @@ import gmail
 import flask
 from secrets import *
 import threading
-from flask import Flask, url_for, render_template, redirect, session, request
+from flask import Flask, url_for, render_template, redirect, session, request, Markup
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 
@@ -13,25 +13,51 @@ mongo = MongoClient()
 
 db = mongo.blog
 
-'''def check_email():
+def check_email():
 	while True:
 		g = gmail.login(GMAIL_USER, GMAIL_PASS)
-		inbox = g.inbox().mail(unread=True, fr="devinmui@yahoo.com") # change email later
+		inbox = g.inbox().mail(unread=True, fr=EMAIL_JUSTIN) # justin
 		if inbox:
-			print inbox[0].fetch()
-			sys.stdout.flush()
+			inbox[0].fetch()
+			subject = inbox[0].subject
+			print subject
+			body = inbox[0].body
+			print body
+			body = body.replace('\r', '<br/>').replace('\n', '<br/>')
+			json = { "title": subject, "body": body }
+			db.posts.insert_one(json)
 			inbox[0].read()
-		else:
-			print None
+		inbox = g.inbox().mail(unread=True, fr=EMAIL_TIM) # tim
+		if inbox:
+			inbox[0].fetch()
+			subject = inbox[0].subject
+			print subject
+			body = inbox[0].body
+			print body
+			body = body.replace('\r', '<br/>').replace('\n', '<br/>')
+			json = { "title": subject, "body": body }
+			db.posts.insert_one(json)
+			inbox[0].read()
 		g.logout()
-		#time.sleep(300) # wait 5 minutes; you dont want all the server resources gone in the next minute
+		time.sleep(600) # wait 10 minutes; you dont want all the server resources gone in the next minute
 
 task = threading.Thread(target = check_email)
-task.start()'''
+task.start()
 
 @app.route('/')
 def index():
 	return render_template('index.html')
+
+@app.route('/blog')
+def blog():
+	posts = db.posts.find({})
+	return render_template('blog.html', posts=posts)
+
+@app.route('/blog/posts/<post_id>')
+def posts(post_id):
+	post_id = ObjectId(post_id)
+	post = db.posts.find_one({"_id": post_id })
+	return render_template('post.html', post=post)
 
 if __name__ == "__main__":
 	app.run(debug=True)
