@@ -1,0 +1,299 @@
+Traceback (most recent call last):
+  File "server.py", line 63, in <module>
+    app.run(host="0.0.0.0", port=80, debug=True)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 772, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 675, in run_simple
+    s.bind((hostname, port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "server.py", line 28, in check_email
+    db.posts.insert_one(json)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/collection.py", line 622, in insert_one
+    with self._socket_for_writes() as sock_info:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/mongo_client.py", line 712, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/topology.py", line 141, in select_server
+    address))
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/topology.py", line 117, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+
+Mandatory Robotics Room Cleanup + Updates
+Hi everyone,
+
+The Robotics Room (P5) is a complete mess at the moment. Today, (Tuesday)
+we met for room cleanup, but we still have a ways to go. There will be a
+second room cleanup on this *Thursday, January 28th. *Per Ms. Chou's
+request, *all VEX members are required to attend. *
+
+Those who are on a Project Team should also come to help with the
+organizing, and to cleanup their group's general area. This means putting
+tools & parts that aren't needed away into their correct boxes and cleaning
+up the floors & tables.
+
+We will also be starting a new Project Period soon. I know with Finals and
+the Tournament that project groups haven't been meeting as often, but with
+the new Project Period (Term 3), we want project teams to be meeting more
+regularly. *We would also like the project leaders to be in contact with
+James (our Projects Director) to give updates on the project's status,
+meeting schedule, and who is not showing up to meetings.*
+
+Ian SooHoo
+*IT/Media Director*
+*Gael Force Robotics*
+
+ * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 232-917-011
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "server.py", line 28, in check_email
+    db.posts.insert_one(json)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/collection.py", line 622, in insert_one
+    with self._socket_for_writes() as sock_info:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/mongo_client.py", line 712, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/topology.py", line 141, in select_server
+    address))
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/topology.py", line 117, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "server.py", line 28, in check_email
+    db.posts.insert_one(json)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/collection.py", line 622, in insert_one
+    with self._socket_for_writes() as sock_info:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/mongo_client.py", line 712, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/topology.py", line 141, in select_server
+    address))
+  File "/usr/local/lib/python2.7/dist-packages/pymongo/topology.py", line 117, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET / HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/css/font-awesome.min.css HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/slider/flexslider.css HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/css/style.css HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/slider/modernizr.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/js/jquery.bootstrap-autohidingnavbar.min.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/js/jquery.singlePageNav.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/js/templatemo_custom.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/slider/jquery.flexslider.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/js/smooth.scrolling.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/js/jquery.flip.min.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/js/smooth.min.js HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/images/logo.png HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:21] "GET /static/images/slide2.jpg HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:22] "GET /static/images/slide3.JPG HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:22] "GET /static/images/slide4.jpg HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:22] "GET /static/images/slide5.jpg HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:23] "GET /static/images/slide6.jpg HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:23] "GET /static/images/image/never-gonna-give-you-up.mp3 HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 194, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 185, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 166, in write
+    self.wfile.write(data)
+IOError: [Errno 104] Connection reset by peer
+206.110.235.21 - - [02/Feb/2016 15:19:33] "GET /static/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:33] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:33] "GET /static/images/left_arrow.png HTTP/1.1" 200 -
+206.110.235.21 - - [02/Feb/2016 15:19:33] "GET /static/images/slide7.jpg HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 194, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 185, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 166, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+206.110.235.21 - - [02/Feb/2016 15:19:34] "GET /static/images/slide1.jpg HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 194, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 185, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 166, in write
+    self.wfile.write(data)
+IOError: [Errno 104] Connection reset by peer
+206.110.235.21 - - [02/Feb/2016 15:19:34] "GET /static/fonts/fontawesome-webfont.ttf?v=4.0.3 HTTP/1.1" 200 -
+[2016-02-03 15:31:38 +0000] [10597] [INFO] Starting gunicorn 19.4.5
+[2016-02-03 15:31:38 +0000] [10597] [INFO] Listening at: http://0.0.0.0:80 (10597)
+[2016-02-03 15:31:38 +0000] [10597] [INFO] Using worker: sync
+[2016-02-03 15:31:38 +0000] [10602] [INFO] Booting worker with pid: 10602
+[2016-02-03 15:31:38 +0000] [10603] [INFO] Booting worker with pid: 10603
+[2016-02-03 15:31:38 +0000] [10606] [INFO] Booting worker with pid: 10606
+[2016-02-03 15:31:38 +0000] [10607] [INFO] Booting worker with pid: 10607
+[2016-02-03 15:31:48 +0000] [10606] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 174, in handle_request
+    resp.write_file(respiter)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 397, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 387, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/_sendfile.py", line 67, in sendfile
+    raise OSError(e, os.strerror(e))
+OSError: [Errno 32] Broken pipe
+[2016-02-03 15:42:20 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10602)
+[2016-02-03 15:42:20 +0000] [10602] [INFO] Worker exiting (pid: 10602)
+[2016-02-03 15:42:20 +0000] [10653] [INFO] Booting worker with pid: 10653
+[2016-02-03 15:49:49 +0000] [10606] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 174, in handle_request
+    resp.write_file(respiter)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 397, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 387, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/_sendfile.py", line 67, in sendfile
+    raise OSError(e, os.strerror(e))
+OSError: [Errno 32] Broken pipe
+[2016-02-03 15:52:55 +0000] [10607] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 174, in handle_request
+    resp.write_file(respiter)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 397, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 387, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/_sendfile.py", line 67, in sendfile
+    raise OSError(e, os.strerror(e))
+OSError: [Errno 32] Broken pipe
+[2016-02-03 15:53:20 +0000] [10606] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 174, in handle_request
+    resp.write_file(respiter)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 397, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 387, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/_sendfile.py", line 67, in sendfile
+    raise OSError(e, os.strerror(e))
+OSError: [Errno 32] Broken pipe
+[2016-02-03 15:53:51 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10603)
+[2016-02-03 15:53:51 +0000] [10603] [INFO] Worker exiting (pid: 10603)
+[2016-02-03 15:53:51 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10653)
+[2016-02-03 15:53:51 +0000] [10653] [INFO] Worker exiting (pid: 10653)
+[2016-02-03 15:53:51 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10606)
+[2016-02-03 15:53:51 +0000] [10606] [INFO] Worker exiting (pid: 10606)
+[2016-02-03 15:53:51 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10607)
+[2016-02-03 15:53:51 +0000] [10607] [INFO] Worker exiting (pid: 10607)
+[2016-02-03 15:53:51 +0000] [10839] [INFO] Booting worker with pid: 10839
+[2016-02-03 15:53:51 +0000] [10838] [INFO] Booting worker with pid: 10838
+[2016-02-03 15:53:51 +0000] [10840] [INFO] Booting worker with pid: 10840
+[2016-02-03 15:53:52 +0000] [10841] [INFO] Booting worker with pid: 10841
+[2016-02-03 15:59:42 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10838)
+[2016-02-03 15:59:42 +0000] [10838] [INFO] Worker exiting (pid: 10838)
+[2016-02-03 15:59:42 +0000] [10873] [INFO] Booting worker with pid: 10873
+[2016-02-03 16:31:56 +0000] [10873] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 174, in handle_request
+    resp.write_file(respiter)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 397, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 387, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/_sendfile.py", line 67, in sendfile
+    raise OSError(e, os.strerror(e))
+OSError: [Errno 32] Broken pipe
+[2016-02-03 16:32:27 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10841)
+[2016-02-03 16:32:27 +0000] [10841] [INFO] Worker exiting (pid: 10841)
+[2016-02-03 16:32:27 +0000] [11420] [INFO] Booting worker with pid: 11420
+[2016-02-03 17:08:03 +0000] [10840] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 174, in handle_request
+    resp.write_file(respiter)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 397, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 387, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/_sendfile.py", line 67, in sendfile
+    raise OSError(e, os.strerror(e))
+OSError: [Errno 32] Broken pipe
+[2016-02-03 17:09:21 +0000] [10840] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 174, in handle_request
+    resp.write_file(respiter)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 397, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 387, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/_sendfile.py", line 67, in sendfile
+    raise OSError(e, os.strerror(e))
+OSError: [Errno 32] Broken pipe
+[2016-02-03 17:10:15 +0000] [10839] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 174, in handle_request
+    resp.write_file(respiter)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 397, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/wsgi.py", line 387, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/http/_sendfile.py", line 67, in sendfile
+    raise OSError(e, os.strerror(e))
+OSError: [Errno 32] Broken pipe
+[2016-02-04 04:51:53 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10873)
+[2016-02-04 04:51:53 +0000] [10873] [INFO] Worker exiting (pid: 10873)
+[2016-02-04 04:51:53 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10839)
+[2016-02-04 04:51:53 +0000] [10839] [INFO] Worker exiting (pid: 10839)
+[2016-02-04 04:51:53 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:10840)
+[2016-02-04 04:51:53 +0000] [10840] [INFO] Worker exiting (pid: 10840)
+[2016-02-04 04:51:53 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:11420)
+[2016-02-04 04:51:53 +0000] [11420] [INFO] Worker exiting (pid: 11420)
+[2016-02-04 04:51:53 +0000] [15268] [INFO] Booting worker with pid: 15268
+[2016-02-04 04:51:53 +0000] [15269] [INFO] Booting worker with pid: 15269
+[2016-02-04 04:51:53 +0000] [15270] [INFO] Booting worker with pid: 15270
+[2016-02-04 04:51:53 +0000] [15271] [INFO] Booting worker with pid: 15271
+[2016-02-05 03:10:43 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:15268)
+[2016-02-05 03:10:43 +0000] [15268] [INFO] Worker exiting (pid: 15268)
+[2016-02-05 03:10:43 +0000] [24368] [INFO] Booting worker with pid: 24368
+[2016-02-05 03:10:47 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:15270)
+[2016-02-05 03:10:47 +0000] [15270] [INFO] Worker exiting (pid: 15270)
+[2016-02-05 03:10:47 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:15271)
+[2016-02-05 03:10:47 +0000] [15271] [INFO] Worker exiting (pid: 15271)
+[2016-02-05 03:10:48 +0000] [24374] [INFO] Booting worker with pid: 24374
+[2016-02-05 03:10:48 +0000] [24375] [INFO] Booting worker with pid: 24375
+[2016-02-05 03:10:52 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:15269)
+[2016-02-05 03:10:52 +0000] [15269] [INFO] Worker exiting (pid: 15269)
+[2016-02-05 03:10:52 +0000] [24386] [INFO] Booting worker with pid: 24386
+[2016-02-05 03:12:17 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:24368)
+[2016-02-05 03:12:17 +0000] [24368] [INFO] Worker exiting (pid: 24368)
+[2016-02-05 03:12:17 +0000] [24401] [INFO] Booting worker with pid: 24401
+[2016-02-05 03:14:53 +0000] [10597] [CRITICAL] WORKER TIMEOUT (pid:24386)
+[2016-02-05 03:14:53 +0000] [24386] [INFO] Worker exiting (pid: 24386)
+[2016-02-05 03:14:53 +0000] [24458] [INFO] Booting worker with pid: 24458
