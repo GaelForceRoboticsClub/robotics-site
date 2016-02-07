@@ -117,13 +117,15 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	padding-bottom: 20px;
 	color: white;
 	text-transform: uppercase;
+    outline: none;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 	color: white;
 	background-color: #C32C38;
+    outline: none;
 }
 
-.navbar>.container .navbar-brand { margin-left: 0; }
+.navbar>.container .navbar-brand { margin-left: 0;}
 .navbar-collapse .navbar-nav.navbar-right:last-child { margin-right: 0; }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #498FC0; }
 
