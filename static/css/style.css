@@ -60,7 +60,7 @@ ul { margin: 0; }
 }
 
 section { padding-top: 85px; margin-top: -50px; }
-section .outer_container { margin-bottom: 50px; background-color: #eeeeee;  }
+section .outer_container { padding-top: 85px; margin-bottom: 50px; background-color: #eeeeee;  }
 section .row { margin-left: 0; margin-right: 0; overflow: hidden; }
 section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bottom: 0px; line-height: 280px; text-align: center; }
 

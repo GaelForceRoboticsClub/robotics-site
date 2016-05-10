@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	 <!--
 
 	 .,__,.........,__,.....╭¬¬¬¬¬━━╮
@@ -12,7 +12,7 @@
 
   <html class="no-js" lang="en"><!--<![endif]-->
   <head>
-    <title>Blog - Gael Force Robotics</title>
+    <title>Gael Force Robotics</title>
     <meta name = "theme-color" content="#222222"
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,18 +69,27 @@
       </div>
     </div>
   </nav>
-	<div class="container">
-		<h1>{{ post.title }}</h1>
-		<p>{{ post.body }}</p>
-	</div>
+	<section id="about">
+		<div class="outer_container">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<div id="">
+				{% for post in posts %}
+					<h3><a href="{{ 'blog/posts/%s' % post._id }}">{{ post.title }}</a></h3>
+					<p>{{ post.body }}</p>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
 	  <!-- JavaScripts -->
-  <script src="../../static/js/jquery.min.js"></script>
-  <script src="../../static/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
-  <script src="../../static/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../../static/js/jquery.singlePageNav.js"></script>
-  <script src="../../static/js/templatemo_custom.js"></script>
-  <script src="../../static/js/smooth.scrolling.js"></script>
-  <script src="../../static/js/jquery.flip.min.js"></script>
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+  <script src="static/bootstrap/js/bootstrap.min.js"></script>
+  <script src="static/js/jquery.singlePageNav.js"></script>
+  <script src="static/js/templatemo_custom.js"></script>
+  <script src="static/js/smooth.scrolling.js"></script>
+  <script src="static/js/jquery.flip.min.js"></script>
   <script>
     $("nav.navbar-fixed-top").autoHidingNavbar();
   </script>
