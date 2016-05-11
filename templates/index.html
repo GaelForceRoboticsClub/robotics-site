@@ -171,17 +171,17 @@
                 <p>Captain</p>
               </div>
               <div class="col col-md-3 col-sm-4 col-xs-4">
-                <img src="static/images/tim.jpg" alt="Sarang Vadali" class="img-circle img-responsive" id="ian">
+                <img src="static/images/tim.jpg" alt="Sarang Vadali" class="img-circle img-responsive" id="color2">
                 <p>Sarang Vadali</p>
                 <p>Captain</p>
               </div>
                 <div class="col col-md-3 col-sm-4 col-xs-4">
-                <img src="static/images/tim.jpg" alt=">Wesley Wong" class="img-circle img-responsive" id="ian">
+                <img src="static/images/tim.jpg" alt=">Wesley Wong" class="img-circle img-responsive" id="color3">
                 <p>Wesley Wong</p>
                 <p>Captain</p>
               </div>
                 <div class="col col-md-3 col-sm-4 col-xs-4">
-                <img src="static/images/tim.jpg" alt="Advisor" class="img-circle img-responsive" id="ian">
+                <img src="static/images/tim.jpg" alt="Advisor" class="img-circle img-responsive" id="color4">
                 <p>Placeholder</p>
                 <p>Advisor</p>
               </div>
@@ -581,6 +581,21 @@ Our team looks into every aspect of the engineering field. We cooperate and work
     $('#ian').click(function(){
       var item = items[Math.floor(Math.random()*items.length)];
       $(this).css('filter',item).css('-webkit-filter', item);
+    });
+    var items2 = ['grayscale(2)', 'hue-rotate(180deg)', 'sepia(1)', 'grayscale(1)'];
+    $('#color2').click(function(){
+      var item2 = items2[Math.floor(Math.random()*items2.length)];
+      $(this).css('filter',item2).css('-webkit-filter', item2);
+    });
+     var items3 = ['saturate(2)', 'invert(0.2)', 'brightness(2)', 'blur(5px)'];
+    $('#color3').click(function(){
+      var item3 = items3[Math.floor(Math.random()*items3.length)];
+      $(this).css('filter',item3).css('-webkit-filter', item3);
+    });
+     var items4 = ['grayscale(2)', 'hue-rotate(180deg)', 'sepia(1)', 'grayscale(1)'];
+    $('#color4').click(function(){
+      var item4 = items4[Math.floor(Math.random()*items4.length)];
+      $(this).css('filter',item4).css('-webkit-filter', item4);
     });
   </script>
 </body>
