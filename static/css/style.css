@@ -46,15 +46,7 @@ h2 { font-size: 1.5em; }
 
 ul { margin: 0; }
 
-.se-pre-con {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6;
-  background-size: 60% 80%;
-  z-index: 10000;
-}
+
 .back {
 	padding: 20px;
 }
@@ -348,29 +340,8 @@ footer .row { height: 100%; }
 	
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-	h1 { font-size: 3.5em; }
-	.services_buttons { text-align: right; }
-	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
-		height: 85px;
-	}
-	#about .col-md-7 { padding-left: 30px; }
-	#about .col-md-8 { padding-left: 20px; }
-	#team .col-md-7 { padding-right: 30px; }
-	#skills .col-md-7 { padding-right: 30px; }
-	#portfolio .col-md-7 { padding-left: 30px; }
-	#contact .col-md-7 { padding-left: 30px; }
-	.navbar-nav > li, .navbar-nav li a {
-		min-height: 50px;
-		height: 50px;
-	}
-}
-
-/*Mini-Tablet Mode*/
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-	.navbar-brand img {
-		width: 100px;
-	}
+/*Mobile handles logo */
+@media only screen and (max-width: 1199px)  {
 	h1 { font-size: 2.5em; }
 	nav .fa { display: inline; text-align: left; margin-bottom: 0; margin-right: 10px; }
 	.navbar-default .navbar-nav>li>a { padding-top: 15px; padding-bottom: 15px; }
@@ -422,15 +393,7 @@ footer .row { height: 100%; }
 		min-height: 50px;
 		height: 50px;
 	}
-	.se-pre-con {
-	  position: fixed;
-	  width: 100%;
-	  height: 100%;
-	  top: 0; left: 0; right: 0; bottom: 0;
-	  background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6;
-	  background-size: 480px;
-	  z-index: 10000;
-	}
+	
 	.slide-img {
 		width: 100% !important;
 	}
