@@ -17,10 +17,8 @@ def check_email():
 		if inbox:
 			inbox[0].fetch()
 			subject = inbox[0].subject
-			print subject
 			body = inbox[0].body
-			print body
-			body = body.replace('\r', '<br/>').replace('\n', '<br/>')
+			body = body.strip("*")
 			json = { "title": subject, "body": body }
 			db.posts.insert_one(json)
 			inbox[0].read()
