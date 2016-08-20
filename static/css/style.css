@@ -21,6 +21,10 @@
   .navbar-toggle.collapsed .bottom-bar {
     transform: rotate(0); }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+
 ul.slides > li {
 	background: #ffffff;
 }
@@ -142,7 +146,10 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
     text-align: center;
     font-size: 20px;
 }
-
+/*------------------------------------------------------
+	Link Button Styles
+--------------------------------------------------------*/
+#linkz {align:vertically-center-multi-lined-text; }
 /*------------------------------------------------------
 	About Us Styles
 --------------------------------------------------------*/
@@ -368,7 +375,7 @@ footer .row { height: 100%; }
 }
 
 /*Mobile*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1199px) {
 	section h1 {	font-size: 1.6em; line-height: 50px; }
 	nav .fa { display: inline; text-align: left; margin-bottom: 0; margin-right: 10px; }
 	.col-xxs { display:block; float:none; width: 100% }

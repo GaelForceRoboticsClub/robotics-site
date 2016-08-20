@@ -1,4 +1,4 @@
-/*!
+!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -1831,7 +1831,8 @@ pre code {
 .col-xs-offset-0 {
     margin-left: 0
 }
-@media (min-width: 768px) {
+/*Weird tablet mode size            ........................................*/
+/*@media (max-width: 1199px) {
     .col-sm-1,
     .col-sm-10,
     .col-sm-11,
@@ -1999,7 +2000,7 @@ pre code {
     .col-sm-offset-0 {
         margin-left: 0
     }
-}
+}*/
 @media (min-width: 992px) {
     .col-md-1,
     .col-md-10,
@@ -4212,7 +4213,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     top: auto;
     left: auto
 }
-@media (min-width: 768px) {
+@media (max-width: 0px) {
     .nav-justified>li {
         display: table-cell;
         width: 1%
@@ -4283,7 +4284,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-collapse.in {
     overflow-y: auto
 }
-@media (min-width: 768px) {
+/*Potential Tablet Mode Controller*/
+@media (min-width: 1200px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -4639,7 +4641,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     color: #555;
     background-color: #e7e7e7
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
         color: #777
     }
@@ -6060,7 +6062,7 @@ button.close {
     height: 50px;
     overflow: scroll
 }
-@media (min-width: 768px) {
+@media (min-width: 0px) {
     .modal-dialog {
         width: 600px;
         margin: 30px auto
@@ -6844,4 +6846,4 @@ button.close {
         display: none!important
     }
 }
-/*# sourceMappingURL=bootstrap.min.css.map */
+/*# sourceMappingURL=bootstrap.min.css.map 

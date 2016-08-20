@@ -17,6 +17,10 @@ db = mongo.blog
 def index():
 	return render_template('index.html')
 
+@app.route('/')
+def checkin():
+	return render_template('checkin.html')
+
 @app.route('/blog')
 def blog():
 	posts = db.posts.find({})
