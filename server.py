@@ -17,7 +17,7 @@ db = mongo.blog
 def index():
 	return render_template('index.html')
 
-@app.route('/')
+@app.route('/checkin')
 def checkin():
 	return render_template('checkin.html')
 
