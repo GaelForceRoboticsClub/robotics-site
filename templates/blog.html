@@ -36,61 +36,39 @@
     <script src="static/slider/modernizr.js"></script>
 
 </head>
-<body style="padding-top:100px">
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="row">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="col-md-2 col-sm-2 col-xs-12">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar top-bar"></span>
-              <span class="icon-bar middle-bar"></span>
-              <span class="icon-bar bottom-bar"></span>
-            </button>
-            <a href="http://dhsrobotics.com" class="navbar-brand"><!-- prob change to home link-->
-              <img src="static/images/logo.svg" alt="karma"/>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-10 col-sm-10 col-xs-12">
-          <div class="navbar-collapse collapse menu">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="http://dhsrobotics.com#home"><i class="fa fa-home"></i>Home</a></li>
-              <li><a href="http://dhsrobotics.com#about"><i class="fa fa-user"></i>About Us</a></li>
-              <li><a href="http://dhsrobotics.com#services"><i class="fa fa-cogs"></i>Teams</a></li>
-              <li><a href="http://dhsrobotics.com#portfolio"><i class="fa fa-briefcase"></i>Projects</a></li>
-              <li><a href="http://dhsrobotics.com#blog"><i class="fa fa-calendar"></i>Meetings</a></li>
-              <li><a href="http://dhsrobotics.com#form"><i class="fa fa-pencil"></i>Resources</a></li>
-            </ul>
-          </div>
-        </div>
+  <body style="padding-top:100px">
+  	<nav>
+        {% include 'header.html' %}
+    </nav>
+  	<section id="about">
+  		<div class="outer_container">
+  		<div class="container">
+  		<div class="row">
+  			<div class="col-md-12">
+  			<div id="">
+  				{% for post in posts %}
+  					<h3><a href="{{ 'blog/posts/%s' % post._id }}">{{ post.title }}</a></h3>
+  					<p>{{ post.body }}</p>
+  				{% endfor %}
+  			</div>
+  		</div>
       </div>
-    </div>
-  </nav>
-	<section id="about">
-		<div class="outer_container">
-		<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-			<div id="">
-				{% for post in posts %}
-					<h3><a href="{{ 'blog/posts/%s' % post._id }}">{{ post.title }}</a></h3>
-					<p>{{ post.body }}</p>
-				{% endfor %}
-			</div>
-		</div>
-	</section>
-	  <!-- JavaScripts -->
-  <script src="static/js/jquery.min.js"></script>
-  <script src="static/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
-  <script src="static/bootstrap/js/bootstrap.min.js"></script>
-  <script src="static/js/jquery.singlePageNav.js"></script>
-  <script src="static/js/templatemo_custom.js"></script>
-  <script src="static/js/smooth.scrolling.js"></script>
-  <script src="static/js/jquery.flip.min.js"></script>
-  <script>
-    $("nav.navbar-fixed-top").autoHidingNavbar();
-  </script>
-</body>
+      </div>
+      </div>
+  	</section>
+      	  <!-- JavaScripts -->
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+        <script src="static/bootstrap/js/bootstrap.min.js"></script>
+        <script src="static/js/jquery.singlePageNav.js"></script>
+        <script src="static/js/templatemo_custom.js"></script>
+        <script src="static/js/smooth.scrolling.js"></script>
+        <script src="static/js/jquery.flip.min.js"></script>
+        <script>
+          $("nav.navbar-fixed-top").autoHidingNavbar();
+        </script>
+    <footer>
+      {% include 'footer.html' %}
+    </footer>
+  </body>
+</html>

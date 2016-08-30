@@ -119,12 +119,13 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	color: white;
 	background-color: #ee3a43;
     outline: none;
+
 }
 
 .navbar>.container .navbar-brand { margin-left: 0;}
 .navbar-collapse .navbar-nav.navbar-right:last-child { margin-right: 0; }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #ffffff; }
-
+/*.navbar-collapse:first-child { margin-top: 40px; }*/
 /*------------------------------------------------------
 	FLEXSLIDER OVERRIDING
 --------------------------------------------------------*/
@@ -418,6 +419,7 @@ footer .row { height: 100%; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 		height: 100%;
 	}
+
 	#services_tabs { padding-left: 0; }
 
 	.navbar-nav > li, .navbar-nav li a {
@@ -427,9 +429,6 @@ footer .row { height: 100%; }
 }
 
 @media only screen and (max-width: 480px) {
-	.navbar-brand img {
-		width: 200px;
-	}
 	.slide-img {
 		width: 100% !important;
 	}
