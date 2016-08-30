@@ -36,14 +36,15 @@
     <script src="static/slider/modernizr.js"></script>
 
 </head>
-<body style="padding-top:100px">
 	<nav>
    {% include 'header.html' %}
   </nav>
-	<div class="container">
-		<h1>{{ post.title }}</h1>
-		<p>{{ post.body }}</p>
-	</div>
+  <body style="padding-top:100px">
+  	<div class="container">
+  		<h1>{{ post.title }}</h1>
+  		<p>{{ post.body }}</p>
+  	</div>
+  </body>
 	  <!-- JavaScripts -->
   <script src="static/js/jquery.min.js"></script>
   <script src="static/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
@@ -55,4 +56,3 @@
   <script>
     $("nav.navbar-fixed-top").autoHidingNavbar();
   </script>
-</body>
