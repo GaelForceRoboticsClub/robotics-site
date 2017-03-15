@@ -55,8 +55,8 @@ ul { margin: 0; }
 	padding: 20px;
 }
 
-section { padding-top: 85px; margin-top: -50px; }
-section .outer_container { padding-top: 85px; margin-bottom: 50px; background-color: #ffffff;  }
+section { padding-top: 100px; margin-top: -50px; }
+section .outer_container { padding-top: 100px; margin-bottom: 50px; background-color: #ffffff;  }
 section .row { margin-left: 0; margin-right: 0; overflow: hidden; }
 section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bottom: 0px; line-height: 280px; text-align: center; }
 
@@ -130,7 +130,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	FLEXSLIDER OVERRIDING
 --------------------------------------------------------*/
 
-.flexslider { padding-top: 85px; background-color: #ffffff;}
+.flexslider { padding-top: 100px; background-color: #ffffff;}
 .flexslider a:hover, .flexslider a:focus { text-decoration: none; }
 .flexslider { border: none;	-webkit-border-radius: 0; border-radius: 0; }
 .flexslider .slides li { position: relative; }
@@ -333,7 +333,7 @@ footer .row { height: 100%; }
 	h1 { font-size: 4.5em; }
 	.services_buttons { text-align: right; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
-		height: 85px;
+		height: 100px;
 	}
 	#about .col-md-7 { padding-left: 50px; }
 	#about .col-md-8 { padding-left: 20px; }
