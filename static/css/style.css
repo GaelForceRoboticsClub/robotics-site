@@ -329,7 +329,7 @@ footer .row { height: 100%; }
 /*------------------------------------------------------
 	MEDIA QUERIES
 --------------------------------------------------------*/
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 600px){
 	h1 { font-size: 4.5em; }
 	.services_buttons { text-align: right; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
@@ -340,75 +340,13 @@ footer .row { height: 100%; }
 	#team .col-md-7 { padding-right: 50px; }
 	#skills .col-md-7 { padding-right: 90px; }
 	#portfolio .col-md-7 { padding-left: 46px; }
-	#contact .col-md-7 { padding-left: 50px; }
-	.navbar-nav > li, .navbar-nav li a {
-		height: 50px;
-	}
+	#contact .col-md-7 { padding-left: 50px; }	
+}
+
+@media only screen and (max-width: 599px) {
 	
-}
-
-/*Mobile handles logo */
-@media only screen and (max-width: 1199px)  {
-	h1 { font-size: 2.5em; }
-	nav .fa { display: inline; text-align: left; margin-bottom: 0; margin-right: 10px; }
-	.navbar-default .navbar-nav>li>a { padding-top: 15px; padding-bottom: 15px; }
-	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-		height: 100%;
-	}
-	.btn-primary { font-size: 1.5em; }
-	.services_buttons { text-align: left; }
-	.services_buttons .icon-button { font-size: 210%; }
-	.blog_post img { max-width: 100%; }
-	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }
-	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px; }
-	#team_content { width: 100%; }
-	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
-	#services_tabs { padding-left: 10px; }
-	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 20px; padding-left: 0; }
-	.navbar-nav > li, .navbar-nav li a {
-		min-height: 50px;
-		height: 50px;
-	}
-	.slide-img {
-		width: 100% !important;
-	}
-}
-
-/*Mobile*/
-@media only screen and (max-width: 1199px) {
-	section h1 {	font-size: 1.6em; line-height: 50px; }
-	nav .fa { display: inline; text-align: left; margin-bottom: 0; margin-right: 10px; }
-	.col-xxs { display:block; float:none; width: 100% }
-    .social_buttons { margin-top: 30px; }
-    .pull-right { float: left !important; } /*do not pull-right in mobile view*/
-    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-		height: 100%;
-	}
-	.navbar-default .navbar-nav>li>a { padding-top: 15px; padding-bottom: 15px; }
-	.btn-primary { font-size: 1.2em; }
-	.services_buttons { text-align: left; }
-	.services_buttons .icon-button { font-size: 190%; }
-	.blog_post { width: 50%;}
-    .blog_post img { max-width: 100%; }
-	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }
-	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px; }
-	#team_content { width: 100%; }
-	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
-	#services_tabs { padding-left: 0; }
-	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 10px; padding-left: 0; }
-	.navbar-nav > li, .navbar-nav li a {
-		min-height: 50px;
-		height: 50px;
-	}
-	
-	.slide-img {
-		width: 100% !important;
-	}
-}
-
-@media only screen and (max-width: 430px) {
 	body { font-size: 10px; }
-	.btn-primary { font-size: 1.1em; }
+	.btn-primary { font-size: 1.1em; }	
 	.blog_post h2 { font-size: 1.1em; padding: 5px 5px; }
 	.services_buttons .icon-button { font-size: 180%; }
 	.navbar-default .navbar-nav>li>a {
@@ -419,21 +357,10 @@ footer .row { height: 100%; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 		height: 100%;
 	}
-
 	#services_tabs { padding-left: 0; }
-
-	.navbar-nav > li, .navbar-nav li a {
-		min-height: 50px;
-		height: 50px;
+	nav .fa { display: inline; text-align: left; margin-bottom: 0; margin-right: 10px; }    
 	}
 }
-
-@media only screen and (max-width: 480px) {
-	.slide-img {
-		width: 100% !important;
-	}
-}
-
 /* http://codepen.io/minimalmonkey/pen/Ecpla */
 
 /* Wrapper */
