@@ -394,7 +394,7 @@ footer .row { height: 100%; }
 	z-index: 10;
 }
 
-.icon-button:hover {
+.icon-button:hover .fa{
 	/*color: #2AA9E0;*/
 	color: #20283e;
 }
